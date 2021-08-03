@@ -1,0 +1,13 @@
+<%- include('partials/header'); -%>
+
+<h1><%= item.postname %></h1>
+<p><%= item.aboutpost %></p>
+<div>
+<a href="/update/<%= item._id%>"><button type="button" class="btn btn-primary">Update Post</button></a>
+
+<a href="/confdel/<%= item._id%>">  <button type="button" class="btn btn-primary">Delete Post</button></a>
+
+</div>
+
+
+<%- include('partials/footer'); -%>
